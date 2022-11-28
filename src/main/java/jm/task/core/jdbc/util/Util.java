@@ -18,6 +18,7 @@ public class Util {
                         .addAnnotatedClass(User.class)
                         .buildSessionFactory();
                 System.out.println("Подключение успешно!");
+                return sessionFactory;
             } catch (RuntimeException e) {
                 e.printStackTrace();
                 System.err.println("Нет подключения!");
