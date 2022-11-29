@@ -11,15 +11,14 @@ public class Main {
         Util.getSessionFactory();
         UserService userServ = new UserServiceImpl();
 
-//        userServ.createUsersTable();
-//
+        userServ.createUsersTable();
+
         userServ.saveUser("Frodo", "Baggins", (byte) 50);
-//        userServ.saveUser("Samwise", "Gamgee", (byte) 38);
-//        userServ.saveUser("Merry", "Brandybuck", (byte) 36);
-//        userServ.saveUser("Pippin", "Took", (byte) 28);
-//
-//        userServ.removeUserById(1);
-//        userServ.getAllUsers();
+        userServ.saveUser("Samwise", "Gamgee", (byte) 38);
+        userServ.saveUser("Merry", "Brandybuck", (byte) 36);
+        userServ.saveUser("Pippin", "Took", (byte) 28);
+
+        userServ.removeUserById(3);
 //        userServ.cleanUsersTable();
 //        userServ.dropUsersTable();
     }
